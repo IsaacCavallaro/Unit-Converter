@@ -1,12 +1,15 @@
 ////////////////////////////  GLOBAL VARIABLES  ///////////////////////////////////
 
-let num = 20;
+let num = 0;
 let feet;
 let meter;
 let liter;
 let gallon;
 let pound;
 let kilo;
+let numText = document.getElementById("num-text");
+
+
 
 ////////////////////////////  LENGTH FUNCTIONS  ///////////////////////////////////
 
@@ -43,20 +46,36 @@ function kiloToPound() {
   pound = pound.toFixed(3);
 }
 
-
-
 function poundToKilo() {
   kilo = num * 0.45359237;
   kilo = kilo.toFixed(3);
 }
 
-////////////////////////////  CALL FUNCTIONS  ///////////////////////////////////
-meterToFeet();
-feetToMeter();
-literToGallon();
-gallonToLiter();
-kiloToPound();
-poundToKilo();
+//////////////////////////// BUTTON FUNCTIONS  ///////////////////////////////////
+
+function increment() {
+  num += 1;
+  numText.textContent = num;
+}
+
+function decrement() {
+  num -= 1;
+  numText.textContent = num;
+}
+
+function save() {
+  meterToFeet();
+  feetToMeter();
+  literToGallon();
+  gallonToLiter();
+  kiloToPound();
+  poundToKilo();
+  document.getElementById("num-text").textContent = num;
+  document.getElementById("length-para").textContent = `${num} meters = ${feet} feet | ${num} feet = ${meter} meters`;
+  document.getElementById("volume-para").textContent = `${num} liters = ${gallon} gallons | ${num} gallons = ${liter} liters`;
+  document.getElementById("mass-para").textContent = `${num} kilograms = ${pound} pounds | ${num} pounds = ${kilo} kilograms`;
+  
+}
 
 ////////////////////////////  DISPLAY TEXT  ///////////////////////////////////
 

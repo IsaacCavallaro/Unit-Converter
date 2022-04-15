@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -15,27 +15,34 @@
     <header class="header-container"> <!-- Container for header section -->
       <div class="header-content">
         <div class="header-wrapper">
-          <h1 class="header">Metric/Imperial Unit Conversion</h1>
+          <h1 class="header-text">Metric/Imperial Unit Conversion</h1>
         </div>
         <div class="num-wrapper">
           <p class="num-text" id="num-text">0</p>
+        </div>
+        <div class="increment-decrement-wrapper">
+          <button id="increment-btn" onclick="increment()">INCREMENT</button>
+          <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+        </div>
+        <div class="save-wrapper">
+          <button id="save-btn" onclick="save()">SAVE</button>
         </div>
       </div>
     </header>
 
     <footer class="footer-container"> <!-- Container for footer section -->
       <div class="footer-content">
-        <div class="length">
+        <div class="unit">
           <h2>Length (Meter/Feet)</h2>
-          <p id="length-para"></p>
+          <p class="unit-para" id="length-para"></p>
         </div>
-        <div class="volume">
+        <div class="unit">
           <h2>Volume (Liters/Gallons)</h2>
-          <p id="volume-para"></p>
+          <p class="unit-para" id="volume-para"></p>
         </div>
-        <div class="mass">
+        <div class="unit">
           <h2>Mass (Killograms/Pounds)</h2>
-          <p id="mass-para"></p>
+          <p  class="unit-para" id="mass-para"></p>
         </div>
       </div>
     </footer>
