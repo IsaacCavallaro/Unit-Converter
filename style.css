@@ -1,4 +1,33 @@
 html, body {
   margin: 0;
   padding: 0;
+  color: #fff;
+}
+
+.page-container {
+  height: 100vh; /* Set page-container to full viewport height */
+  width: 100vw; /* Set page-container to full viewport width */
+  display: flex;
+  flex-direction: column;
+  border: solid 1px red;
+  background: #1F2937;
+}
+
+/* =========== HEADER ============== */
+
+.header-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top right, #FB3796, #585DFE);
+  color: #fff;
+  border: solid 1px green;
+  height: 50%;
+}
+
+/* =========== FOOTER ============== */
+
+.footer-container {
+  /* background: #1F2937; */
 }
