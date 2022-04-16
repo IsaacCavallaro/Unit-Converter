@@ -74,8 +74,45 @@ html, body {
   font-size: 12px
 }
 
+button {
+  appearance: none;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #1F2937;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 /* =========== MEDIA QUERIES ============== */
 
+/************ MOBILE ***************/
+
+@media only screen and (min-width: 320px) {
+ 
+
+  button {
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+}
 
 /************ TABLET ***************/
 @media only screen and (min-width: 768px) {
@@ -84,11 +121,17 @@ html, body {
   }
 
   .num-text {
-    font-size: 150px;
+    font-size: 110px;
   }
 
   .unit {
     font-size: 15px
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
   }
 }
 
@@ -105,6 +148,12 @@ html, body {
 
   .unit {
     font-size: 20px
+  }
+
+  button {
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
   }
 
 }
