@@ -47,7 +47,7 @@ html, body {
   border: hidden;
   size: 250px;
   text-align: center;
-  font-size: 136px;
+  font-size: 80px;
   font-weight: 800;
   color: #fff;
   width: 75%;
@@ -113,13 +113,23 @@ button {
 
 /* =========== MEDIA QUERIES ============== */
 
-/************ TABLET ***************/
-@media only screen and (min-width: 440px) {
+/************ iphone7 ***************/
+@media only screen and (min-height: 667px) {
   .header-text {
     font-size: 80px;
     margin-bottom: 50px;
   }
+}
 
+/************ TABLET ***************/
+@media only screen and (min-width: 440px) {
+  .header-text {
+    font-size: 80px;
+  }
+
+  #input {
+    font-size: 120px;
+  }
 
   .unit {
     font-size: 15px
@@ -137,6 +147,11 @@ button {
   .unit {
     font-size: 20px
   }
+
+  #input {
+    font-size: 150px;
+  }
+
 }
   /************ LARGE SCREEN ***************/
 
