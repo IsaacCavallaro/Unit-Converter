@@ -35,16 +35,27 @@ html, body {
 }
 
 .header-text {
-  font-size: 30px;
+  font-size: 50px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 0px;
 }
 
-.num-text {
-  font-size: 60px;
-  margin: 0px;
+#input {
+  background-color: transparent;
+  border: hidden;
+  size: 250px;
+  text-align: center;
+  font-size: 136px;
+  font-weight: 800;
+  color: #fff;
+  width: 75%;
+}
+
+/* remove outline of the text input */
+textarea:focus, input:focus {
+  outline: none;
 }
 
 /* =========== FOOTER ============== */
@@ -105,21 +116,13 @@ button {
 /************ TABLET ***************/
 @media only screen and (min-width: 440px) {
   .header-text {
-    font-size: 60px;
+    font-size: 80px;
+    margin-bottom: 50px;
   }
 
-  .num-text {
-    font-size: 110px;
-  }
 
   .unit {
     font-size: 15px
-  }
-
-  button {
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
   }
 }
 
@@ -127,21 +130,24 @@ button {
 /************ DESKTOP ***************/
 @media only screen and (min-width: 1200px) {
   .header-text {
-    font-size: 60px;
-  }
-
-  .num-text {
-    font-size: 150px;
+    font-size: 100px;
+    margin-bottom: 50px;
   }
 
   .unit {
     font-size: 20px
   }
+}
+  /************ LARGE SCREEN ***************/
 
-  button {
-    font-size: 30px;
-    padding: 20px;
-    margin: 10px;
-  }
-
+  @media only screen and (min-width: 1400px) {
+    .header-text {
+      font-size: 120px;
+      margin-bottom: 50px;
+    }
+  
+    .unit {
+      font-size: 20px
+    }
+  
 }
