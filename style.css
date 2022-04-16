@@ -139,11 +139,11 @@ button {
 /************ DESKTOP ***************/
 @media only screen and (min-width: 1200px) {
   .header-text {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .num-text {
-    font-size: 200px;
+    font-size: 150px;
   }
 
   .unit {
